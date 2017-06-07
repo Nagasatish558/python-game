@@ -26,8 +26,8 @@ CELL_HEIGHT = 50
 WALLS = [
     (3, 4),
     (3, 5),
-    (2, 2),
-    (11,6),(10,6),(10,8),(10,9)
+    (2, 2),(3,1),(8,6),(8,5),(6,5),(5,5),(8,7),(6,8),
+    (11,6),(10,6),(10,8),(10,9),(7,9),(5,8)
 ]
 home=[(11,9)]
 
@@ -57,9 +57,10 @@ def draw_grid():
 
 def paint():
     screen.fill(BLACK)
+    draw_walls()
     draw_grid()
     pyhome(11,9)
-    draw_walls()
+   
     draw_ball(x, y)
     
 
